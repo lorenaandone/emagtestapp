@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">emagtestapp</string>
+
+    <string name="action_favorites">Favorites</string>
+    <string name="action_home">Home</string>
+    <string name="action_search">Search</string>
+
+
+    <string name="favorites_fragment_label">Favorites Fragment</string>
+    <string name="movies_fragment_label">Movies Fragment</string>
+    <string name="search_fragment_label">Search Fragment</string>
+
+    <string name="home_title">Home</string>
+
+    <string name="filter_movie_now_playing"> Now playing</string>
+    <string name="filter_movie_popular">Popular</string>
+    <string name="filter_movie_top_rated">Top Rated</string>
+    <string name="filter_movie_upcoming">Upcoming</string>
+</resources>

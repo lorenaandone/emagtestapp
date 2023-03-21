@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.EmagTestApp.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.MaterialComponents.Toolbar.Primary
+        </item>
+        <item name="android:theme">@style/ThemeOverlay.MaterialComponents.Toolbar.Primary</item>
+        <item name="popupTheme">@style/ThemeOverlay.MaterialComponents.Toolbar.Popup.Primary</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="titleTextColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Widget.EmagTestApp.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.EmagTestApp.CardView
+        </item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <style name="None" />
+
+    <style name="ShapeAppearanceOverlay.EmagTestApp.CardView" parent="None">
+        <item name="cornerSize">@dimen/cards_rounded_corners_size</item>
+    </style>
+
+    <style name="Widget.EmagTestApp.TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">?attr/colorPrimary</item>
+        <item name="tabTextColor">?attr/colorOnPrimary</item>
+        <item name="tabIndicatorColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Widget.EmagTestApp.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="itemIconTint">?attr/colorOnPrimary</item>
+        <item name="itemTextColor">?attr/colorOnPrimary</item>
+        <item name="labelVisibilityMode">selected</item>
+    </style>
+</resources>

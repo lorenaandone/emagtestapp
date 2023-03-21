@@ -1,0 +1,22 @@
+1. La DI am ales Koin pentru ca folositi si voi (l-am folosit pentru prima data intr-un proiect, eu fiind obisnuita cu Dagger)
+
+2. Ce am facut altfel decat as fi facut in mod normal, din cauza timpului limitat:
+
+Nu am respectat textApperence-urile din documentatie, le-am folosit pe cele default din material design
+In loc de skeleton loading am folosit un progress bar default
+Am folosit uiModel pentru state-ul ecranului in loc de uiState (recomandat acum de Google)
+Ca arhitectura as fi folosit un Contract pentru abstractizarea ViewModel-ului (fragmentul sa foloseasca contractul), dar nu am reusit in timp util
+sa imi dau seama cum sa ii fac provide cu Koin
+Pentru recyclerview binding data am folosit o librarie (pe care am folosit-o in mai multe proiecte in productie fara probleme)
+
+3. Ce as fi facut daca as fi avut mai mult timp la dispozitie
+
+As fi adaugat in-memory cache pentru a nu reface call-urile la fiecare tab selection si pentru salvat filmele favorite
+As fi creat in acest sens un nou dataSource
+MovieLocalDataSource: MovieDataSource care implementeaza acelasi contract al interfetei
+Apoi si fi creat o clasa MovieInMemoryCache in care as fi tinut un Flow<List<Movie>> care ar fi putut fi observat in FavoritesFragment
+Cache-ul ar fi ajutat si pentru a face getMovieById in ecranul de detalii
+
+Nu am reusit sa fac un splashscreen (as fi facut cu SplashScreen API - nu am avut nici resurse)
+Pentru ecranul de detalii as fi folosit Transition Framework cu shared element transition pentru posterul filmului, dar nu am mai reusit sa
+il implementez

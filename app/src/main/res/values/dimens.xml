@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="cards_rounded_corners_size">8dp</dimen>
+    <dimen name="material_margin_small">8dp</dimen>
+    <dimen name="material_margin_medium">16dp</dimen>
+</resources>
